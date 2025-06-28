@@ -11,9 +11,9 @@
 
     <!-- Menú -->
     <nav class="blue darken-4">
-        <div class="container nav-wrapper">
-        <a href="#!" class="brand-logo"><img src="./img/logo.svg" width="150px" alt="Logo CreaHoy" class="responsive-img"></a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="container nav-wrapper z-depth-0">
+        <div class="brand-logo mt-5"><img src="./img/logo.svg" width="150px" alt="Logo CreaHoy" class="responsive-img"></div>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons medium">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Mis Post</a></li>
@@ -23,13 +23,16 @@
         </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Mis</a></li>
-        <li><a href="#">Contáctenos</a></li>
-        <li><a href="#">Mi</a></li>
+    <!-- Menú emergente en dispositivos móviles y tablets -->
+    <ul class="sidenav blue darken-4" id="mobile-demo">
+        <li><a href="#" class="white-text">Inicio</a></li>
+        <li><a href="#" class="white-text">Mis Post</a></li>
+        <li><a href="#" class="white-text">Contáctenos</a></li>
+        <li><a href="#" class="white-text">Mi Perfil</a></li>
     </ul>
     <!-- Fin del menú -->
+
+
 
     <script src="./js/materialize.min.js"></script>
     <script src="./js/app.js"></script>

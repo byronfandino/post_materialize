@@ -7,18 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/materialize.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>CreaHoy</title>
 </head>
-<body>
+<body class="blue darken-4">
 
     <!-- Menú -->
-    <nav class="blue darken-4">
-        <div class="container nav-wrapper z-depth-0">
+    <nav class="blue darken-4 z-depth-0">
+        <div class="container nav-wrapper">
         <div class="brand-logo mt-5"><img src="./img/logo.svg" width="150px" alt="Logo CreaHoy" class="responsive-img"></div>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons large">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Inicio</a></li>
+            <li class="active"><a href="index.html">Inicio</a></li>
             <li><a href="#">Mis Post</a></li>
             <li><a href="#">Contáctenos</a></li>
             <li><a href="#">Mi Perfil</a></li>
@@ -28,36 +28,75 @@
 
     <!-- Menú emergente en dispositivos móviles y tablets -->
     <ul class="sidenav blue darken-4" id="mobile-demo">
-        <li><a href="#" class="white-text">Inicio</a></li>
+        <li class="active"><a href="index.html" class="white-text active">Inicio</a></li>
         <li><a href="#" class="white-text">Mis Post</a></li>
         <li><a href="#" class="white-text">Contáctenos</a></li>
         <li><a href="#" class="white-text">Mi Perfil</a></li>
     </ul>
     <!-- Fin del menú -->
-
+    <br>
     <!-- Contenido principal de la página -->
-    <div class="row">
-        <div class="col s12 m12 l6 border">
-            <!-- Solo se muestra en resolución de escritorio -->
-            <div class="hide-on-med-and-down">
-                <h2 style="font-family: 'Italianno', cursive;">Imagina sin límites,</h2>
-                <h2 style="font-family: 'Italianno', cursive;">Crea sin miedo,</h2>
-                <h2 style="font-family: 'Italianno', cursive;">Comparte tu mundo,</h2>
-                <h2 style="font-family: 'Italianno', cursive;">Publica con Propósito.</h2>
+    <main class="row" style="margin: 0;">
+        <div class="container">
+            <div class="col s12 m12 l6">
+                <!-- Solo se muestra en resolución de escritorio -->
+                <div class="hide-on-med-and-down white-text" style="font-family: 'Italianno', cursive;">
+                    <h2>Imagina sin límites,</h2>
+                    <h2>Crea sin miedo,</h2>
+                    <h2>Comparte tu mundo,</h2>
+                    <h2>Publica con Propósito.</h2>
+                </div>
+                <!-- Solo se muestra en resolución de móvil y tablet -->
+                <div class="hide-on-large-only white-text center-align">
+                    <h4 style="font-family: 'Italianno', cursive;">Imagina sin límites, Crea sin miedo,</h4>
+                    <h4 style="font-family: 'Italianno', cursive;">Comparte tu mundo, Publica con Propósito.</h4>
+                </div>
             </div>
-            <!-- Solo se muestra en resolución de móvil y tablet -->
-            <div class="hide-on-large-only">
-                <p>Imagina sin límites,</p>
-                <p>Crea sin miedo, Comparte tu mundo,</p>
-                <p>Publica con Propósito.</p>
+
+            <!-- Formulario web -->
+            <div class="col s12 m12 l6 border">
+                <div class="contenedor_fomulario z-depth-3 white" style="padding: 2rem;">
+                    <h5 class="center-align"><strong>Crea tu Post</strong></h5>
+                    <form action="" method="post">
+                        <label for="titulo" class="flow-text">Título del post</label>
+                        <input type="text" id="titulo" required>
+                        <label for="contenido" class="flow-text">Contenido del post</label>
+                        <textarea id="contenido" class="materialize-textarea" required></textarea>
+                        <br><br>
+                        <button type="submit" value="Publicar" class="col s12 m12 l12 btn blue darken-4 waves-effect waves-light center-align white-text ">Publicar</button>
+                        <br><br>
+                        <p class="center-align"><a href="#" class="blue-text text-darken-4">¿Olvidaste tu contraseña?</a></p>
+                        <p class="center-align"><a href="#" class="blue-text text-darken-4">¿No tienes cuenta? Regístrate</a></p>
+                    </form>
+                </div>
             </div>
         </div>
-      <div class="col s12 m12 l6 border">
-        <h1>Segundo DIV</h1>
-      </div>
-    </div>
+    </main>
+    <br><br>
+    <!-- Fin del main -->
 
-    <script src="./js/materialize.min.js"></script>
+    <!-- Inicio del footer -->
+    <footer class="container">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <h5 class="white-text center-align">Contáctenos</h5>
+                <hr>
+                <p class="white-text valign-wrapper"><img src="img/whatsapp.svg" width="30px" height="30px" alt="Icono de whatsapp"/>&nbsp;&nbsp;+573212223344</p>
+                <p class="white-text valign-wrapper"><img src="img/mail.svg" width="30px" height="30px" alt="Icono de correo"/>&nbsp;&nbsp;atencionalcliente@creahoy.com</p>
+            </div>
+            <div class="col s12 m6 l6 center-align">
+                <h5 class="white-text">Síguenos</h5>
+                <hr>
+                    <a class="white-text col s3" href="#"><img src="img/instagram.svg" width="30px" height="30px" alt="Icono de instagram"></a>
+                    <a class="white-text col s3" href="#"><img src="img/facebook.svg" width="30px" height="30px" alt="Icono de facebook"></a>
+                    <a class="white-text col s3" href="#"><img src="img/twitter.svg" width="30px" height="30px" alt="Icono de x"></a>
+                    <a class="white-text col s3" href="#"><img src="img/youtube.svg" width="30px" height="30px" alt="Icono de youtube"></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

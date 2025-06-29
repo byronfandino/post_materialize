@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/materialize.min.css">
     <title>CreaHoy</title>
 </head>
@@ -13,7 +16,7 @@
     <nav class="blue darken-4">
         <div class="container nav-wrapper z-depth-0">
         <div class="brand-logo mt-5"><img src="./img/logo.svg" width="150px" alt="Logo CreaHoy" class="responsive-img"></div>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons medium">menu</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons large">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Mis Post</a></li>
@@ -32,7 +35,27 @@
     </ul>
     <!-- Fin del menú -->
 
-
+    <!-- Contenido principal de la página -->
+    <div class="row">
+        <div class="col s12 m12 l6 border">
+            <!-- Solo se muestra en resolución de escritorio -->
+            <div class="hide-on-med-and-down">
+                <h2 style="font-family: 'Italianno', cursive;">Imagina sin límites,</h2>
+                <h2 style="font-family: 'Italianno', cursive;">Crea sin miedo,</h2>
+                <h2 style="font-family: 'Italianno', cursive;">Comparte tu mundo,</h2>
+                <h2 style="font-family: 'Italianno', cursive;">Publica con Propósito.</h2>
+            </div>
+            <!-- Solo se muestra en resolución de móvil y tablet -->
+            <div class="hide-on-large-only">
+                <p>Imagina sin límites,</p>
+                <p>Crea sin miedo, Comparte tu mundo,</p>
+                <p>Publica con Propósito.</p>
+            </div>
+        </div>
+      <div class="col s12 m12 l6 border">
+        <h1>Segundo DIV</h1>
+      </div>
+    </div>
 
     <script src="./js/materialize.min.js"></script>
     <script src="./js/app.js"></script>
